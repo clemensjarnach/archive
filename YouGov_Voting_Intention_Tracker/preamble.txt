@@ -1,0 +1,6 @@
+% Latex Preamble 
+
+\usepackage{longtable}
+\usepackage{dcolumn}
+\usepackage{pdflscape}
+\usepackage{float}

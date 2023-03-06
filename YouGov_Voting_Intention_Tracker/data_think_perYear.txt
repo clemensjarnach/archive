@@ -1,0 +1,6 @@
+"year","lrgCon_mean","smllCon_mean","hungCon_mean","hungLab_mean","smllLab_mean","lrgLab_mean","DK_mean"
+2019,8,21,26,12,4,2,27
+2020,16,25,10,7,7,3,33
+2021,12,33,12,6,5,2,29
+2022,3,20,15,14,13,8,27
+2023,2,8,12,12,24,18,24

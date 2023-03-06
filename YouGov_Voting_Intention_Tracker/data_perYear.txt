@@ -1,0 +1,5 @@
+"year","Con_mean","Lab_mean","LibDem_mean","SNP_mean","Grn_mean","RefUK_mean","other_mean"
+2020,43,36,6,5,5,3,2
+2021,40,34,8,5,8,4,2
+2022,30,41,10,5,7,4,2
+2023,24,47,9,4,6,7,2
