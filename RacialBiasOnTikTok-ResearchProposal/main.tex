@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	A4-article-template.tex
+%   author: Clemens Jarnach 
+%   created: 2023-02-19
+%   modified: 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 12pt]{article}   %	At the top of the document we want to specify basics like paper type, font size, article class%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Load in all of the packages that we might need in the document. %
+%	This is commonly called our `preamble'                                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[pages=all, color=black, position={current page.south}, placement=bottom, scale=1, opacity=1, vshift=5mm]{background}
+\SetBgContents{
+	\tt Clemens Jarnach - clemens.jarnach@gtc.ox.ac.uk - Green Templeton College}   % copyright
+
+
+
+
+\usepackage[hidelinks]{hyperref}		%	Allows us to link to things.
+\usepackage{amssymb,amsmath}			%	Allows us to use mathematical symbols, like the $\ddagger$ on the titlepage
+\usepackage{graphicx}			     	%	Allows us incorporate graphics
+\graphicspath{ {./media/} }
+
+\usepackage{authblk} 				    %	Allows us to customise our titlepage with the \affil{} block
+\usepackage{arabtex}					%	Allows the incorporation of arabic text
+\usepackage{utf8}					    %	Allows utf-8 character set
+\usepackage[framemethod=TikZ]{mdframed}		%	Allow us to embed latex within latex
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm,asymmetric]{geometry} % Allows customize page margins
+\usepackage{MnSymbol,wasysym}	    	%	Allows additional characters, such as smiley faces :)
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage[english]{babel}
+
+
+
+%  Imports biblatex package
+\usepackage[
+backend=biber,
+style=apa,
+sorting=nyt
+]{biblatex}
+\addbibresource{TikTok.bib} 
+
+
+
+\begin{document} % Begin/end document prefix and suffix all documents.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Start of our documents, we want a titlepage, or `frontmatter'.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Research Proposal \\
+- \\
+Investigating (Implicit) Racial Bias and Social Stigma in TikTok Scrolling Behaviour: An Experimental Study}     %	Allows us to set a title for our document			
+	 	
+\author{Clemens Jarnach}	%	Allows us to specify our name, with a special character
+\affil{Sociology Department, University of Oxford}	%	Allows us to relate special character to our affiliation
+\date{\today}										%	Allows us to specify the date, such as with \today{}
+
+\maketitle 											%	Compile our frontmatter with the \maketitle command
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Body
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Introduction}
+This proposed study aims to test whether racial bias and social stigma can be observed and tested among TikTok users. The study's objective is to test
+the influence of racial signals on users' scrolling behaviour on the popular social media platform TikTok. With the increasing prevalence of social media in our daily lives, it is crucial to understand how these platforms might perpetuate or reflect biases, such as racial bias. By employing experimental methods, we can gain insights into individuals' subconscious preferences and behaviours related to race-based content consumption. 
+
+\section*{Theory}
+The Social Identity Theory (SIT), proposed by Tajfel and Turner in 1979, suggests that individuals derive part of their identity from the social groups they belong to (\cite{tajfelIntegrativeTheoryIntergroup1979}; \cite{TajfelHenri1981Hgas}). In the context of TikTok scrolling behaviour, users' identification with specific racial or ethnic groups can influence their preferences and engagement with content. Users may be more inclined to interact with content that aligns with their social identity and exhibit a tendency to engage less with content created by individuals outside of their identified groups. This behaviour can be attributed to the psychological need for social belonging and the reinforcement of in-group identification.
+
+According to Goffman's (\citeyear{goffmanStigmaNotesManagement1963}) social stigma theory, a stigma refers to a characteristic, action, or reputation that leads to social disapproval in a specific manner.
+The theory suggests that certain groups in society experience rejection based on characteristics that are devalued within a specific social context. Within the context of TikTok or other online platforms, this theory suggests that individuals from stigmatized racial or ethnic groups may face reduced engagement with their content. The devalued characteristics associated with their group may lead to biases or prejudices, causing users to exhibit lower levels of interaction or interest in the content created by members of these stigmatized groups. This behaviour can perpetuate social inequalities and contribute to the marginalization of these individuals within the digital space.
+
+The Implicit Association Test (IAT) (\cite{GreenwaldAnthonyG1995ISCA}; \cite{GreenwaldAnthonyG1998MIDi}), a well-tested and applied method in experimental psychology, explores the concept of unconscious biases individuals may hold towards specific racial or ethnic groups. This test aims to shed light on how these biases can manifest in people's behaviour, and within this study's context,  their TikTok scrolling behaviour. It is possible for users to unknowingly exhibit a preference for certain types of content based on race or ethnicity, without consciously realising it. The IAT approach could serve as a tool to uncover and explore these implicit biases in the setting of TikTok use. 
+
+
+
+\section*{Research Question}
+ Do TikTok users demonstrate biased scrolling behaviour and differential content engagement influenced by the racial signals present in the TikTok videos, and to what extent are these behaviours indicative of implicit racial bias and social stigma?
+
+
+\section*{Objective}
+The primary objective of this study is to investigate whether users demonstrate biased scrolling behaviour based on racial signals present in TikTok videos. By analysing users' choices to skip or select videos, we aim to uncover potential patterns of racial bias and discern how it influences content engagement on the platform.
+Potential racial signals that could be considered in the study may include the following:
+
+\begin{enumerate}
+\item Mentioning of Ethnicity or Race: Videos that mention or discuss ethnic or racial backgrounds, identities, or experiences. Either in audio or captions.
+\item Representation of Diverse Content Creators: Videos created by individuals from different racial or ethnic backgrounds.
+\item Stereotypical Depictions: Videos that perpetuate racial stereotypes or rely on caricatures of specific racial or ethnic groups.
+\item Cultural References: Videos featuring cultural references, symbols, or practices associated with particular racial or ethnic groups.
+\item Implicit Bias: Videos that may not explicitly mention race but contain subtle visual or auditory cues that imply or allude to racial or ethnic identities.
+\end{enumerate}
+
+
+
+\section*{Method}
+
+\begin{enumerate}
+\item Designing Stimuli: A series of TikTok accounts will be created, each featuring a curated selection of videos that contain varying degrees of racial signals. These signals may include explicit mentions of race, implicit cues, or diverse content creators.
+\item Experimental Task: Study participants will be given access to the TikTok accounts and instructed to scroll through the videos while their interactions are monitored. They will be informed that their scrolling behaviour is being recorded but will not be explicitly informed about the study's focus on racial signals.
+\item Data Collection: Various metrics will be collected, including the total time spent on each video, the decision to skip or select videos, and any additional user engagement (e.g., likes, comments). We will also need to screen-record the device in order to analyse the visual and audio content of watched videos and content.  
+\item Data Analysis: The collected data will be analysed using content coding of watched videos and  statistical analysis of behavioural and meta data  to identify any significant patterns in scrolling behaviour related to the presence of racial signals. Sociodemographic data of participants will be used for controls. 
+\end{enumerate}
+
+
+\section*{Ethical Considerations}
+
+\begin{enumerate}
+\item Informed Consent: Participants will be provided with clear information about the study and they will have the opportunity to give informed consent before participating.
+\item Anonymity and Confidentiality: All data collected will be treated with strict confidentiality. Participant identities will be protected, and data will be anonymised during analysis and reporting.
+\item Debriefing and Ethical Guidelines: After completing the experiment, participants will be fully debriefed about the study's purpose and any potential implications. They will be provided with resources and contact information for support or further discussions.
+\item Issue of content selection: How can we ensure ethical selection of content? what video to show and how to select accounts and videos?
+\end{enumerate}
+
+
+
+\section*{Conclusion}
+This study aims to shed light on the relationship between racial signals and scrolling behaviour of TikTok users. The findings will contribute to the understanding of conscious and unconscious racial bias and social stigma of social media users to understand social media content consumption.  
+By uncovering potential racial biases in content consumption, this research may inform future efforts to mitigate bias and promote a more inclusive online environment. The study hopes to contribute valuable insights to the field, fostering awareness and promoting a more inclusive and equitable social media landscape.
+
+\section*{Variation}
+Building upon the proposed study’s framework, I propose an additional variation/alternative that would focus on gender stigma and biases in TikTok content consumption. This investigation would seek to explore whether users' scrolling behaviours and content preferences are influenced by the gender of the individuals featured in the TikTok videos. Specifically, the study would aim to assess if there is a predisposition among users to consume instructional or informative content presented by men, while viewing content featuring women as primarily for entertainment. The study would utilise similar methodology to the racial bias study, with gender signals being evaluated instead of racial signals. This could include the explicit gender of the content creator, stereotypical gender representations, gendered cultural references, and subtle cues that imply gender. This study would contribute to our understanding of gender-based content consumption and could provide valuable insights into perpetuated gender biases in the digital space, potentially informing future efforts to mitigate gender bias and promote gender equity in online environments.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography/References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\newpage
+\printbibliography
+
+
+
+\end{document}
+ 
